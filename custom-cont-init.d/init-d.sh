@@ -14,7 +14,7 @@ if [ ! -f /config/installed ]; then
     bash installer.sh
     rm -f installer.sh
 else
-    echo "Framepack installed, skip installer" > /proc/1/fd/1
+    echo "Package installed, skip installer" > /proc/1/fd/1
 fi
 
 # Execute Startup script
