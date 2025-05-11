@@ -6,7 +6,7 @@ if [ ! -d /config/venv ]; then
 echo "=========================================" > /proc/1/fd/1
 echo "CONDA CREATE venv" > /proc/1/fd/1
 echo "=========================================" > /proc/1/fd/1
-    conda create -p /config/venv python=3.10 -y > /proc/1/fd/1
+    conda create -p /config/venv python=3.12 -y > /proc/1/fd/1
 echo "=========================================" > /proc/1/fd/1
 echo "CONDA ACTIVATE venv" > /proc/1/fd/1
 echo "=========================================" > /proc/1/fd/1
