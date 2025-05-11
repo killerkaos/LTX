@@ -10,7 +10,7 @@ echo "=========================================" > /proc/1/fd/1
 echo "INSTALLER script" > /proc/1/fd/1
 echo "=========================================" > /proc/1/fd/1
 if [ ! -f /config/installed ]; then
-    wget https://raw.githubusercontent.com/killerkaos/framepack/refs/heads/main/installer.sh > /proc/1/fd/1
+    wget https://raw.githubusercontent.com/killerkaos/LTX/refs/heads/main/installer.sh > /proc/1/fd/1
     bash installer.sh
     rm -f installer.sh
 else
