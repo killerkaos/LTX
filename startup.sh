@@ -8,4 +8,4 @@ echo "=========================================" > /proc/1/fd/1
 echo "EXECUTING SERVER" > /proc/1/fd/1
 echo "=========================================" > /proc/1/fd/1
 cd /config/ComfyUI
-python main.py > /proc/1/fd/1
+python main.py --listen 0.0.0.0:8188 > /proc/1/fd/1
