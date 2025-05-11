@@ -53,5 +53,5 @@ RUN echo "source /root/miniconda/etc/profile.d/conda.sh" >> ~/.profile
 ENV NVIDIA_DRIVER_CAPABILITIES="compute,video,utility"
 
 # ports and volumes
-EXPOSE 7860/tcp
+EXPOSE 8087/tcp
 VOLUME /config
