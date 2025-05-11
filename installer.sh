@@ -29,6 +29,9 @@ cd /config/
 git clone https://github.com/comfyanonymous/ComfyUI.git > /proc/1/fd/1
 cd ComfyUI
 pip install -r requirements.txt > /proc/1/fd/1
+cd /config/ComfyUI/custom_nodes
+pip install -r requirements.txt > /proc/1/fd/1
+
 fi
 
 echo "=========================================" > /proc/1/fd/1
