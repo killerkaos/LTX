@@ -12,22 +12,22 @@ echo "CONDA ACTIVATE venv" > /proc/1/fd/1
 echo "=========================================" > /proc/1/fd/1
     conda activate /config/venv > /proc/1/fd/1
 echo "=========================================" > /proc/1/fd/1
-echo "INSTALLING DEPENDENCIES: Torch torchvision torchaudio cuda126 (WILL TAKE A LONG TIME)" > /proc/1/fd/1
+echo "INSTALLING DEPENDENCIES (WILL TAKE A LONG TIME)" > /proc/1/fd/1
 echo "=========================================" > /proc/1/fd/1
-    pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu126 > /proc/1/fd/1
-    conda install -y -c "nvidia/label/cuda-12.6.0" cuda-runtime -y > /proc/1/fd/1
+    pip install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu128 > /proc/1/fd/1
+    conda install -y -c "nvidia/label/cuda-12.8.0" cuda-runtime -y > /proc/1/fd/1
 echo "=========================================" > /proc/1/fd/1
 echo "DEPENDENCIES ALL INSTALLED" > /proc/1/fd/1
 echo "=========================================" > /proc/1/fd/1
 fi
 
-if [ ! -d /config/FramePack ]; then
+if [ ! -d /config/ComfyUI ]; then
 echo "=========================================" > /proc/1/fd/1
-echo "INSTALLING & Downloading framepack" > /proc/1/fd/1
+echo "INSTALLING & Downloading ComfyUI" > /proc/1/fd/1
 echo "=========================================" > /proc/1/fd/1
 cd /config/
-git clone https://github.com/lllyasviel/FramePack.git > /proc/1/fd/1
-cd FramePack
+git clone https://github.com/comfyanonymous/ComfyUI.git > /proc/1/fd/1
+cd ComfyUI
 pip install -r requirements.txt > /proc/1/fd/1
 fi
 
