@@ -21,7 +21,7 @@ fi
 echo "=========================================" > /proc/1/fd/1
 echo "STARTUP python server script" > /proc/1/fd/1
 echo "=========================================" > /proc/1/fd/1
-wget https://raw.githubusercontent.com/killerkaos/framepack/refs/heads/main/startup.sh > /proc/1/fd/1
+wget https://raw.githubusercontent.com/killerkaos/LTX/refs/heads/main/startup.sh > /proc/1/fd/1
 bash startup.sh
 
 exec "$@"
